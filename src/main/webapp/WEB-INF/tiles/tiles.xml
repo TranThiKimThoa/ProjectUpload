@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="mainLayout" template="/WEB-INF/layout/main.jsp">
+		<put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+	<definition name="studentLayout" template="/WEB-INF/layout/classic.jsp">
+		<put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/layout/menustudent.jsp" />  
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+	<definition name="teacherLayout" template="/WEB-INF/layout/classicteacher.jsp">
+		<put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/layout/menuteacher.jsp" />  
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+	
+	<definition name="adminLayout" template="/WEB-INF/layout/classicadmin.jsp">
+		<put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/layout/menuadmin.jsp" />  
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+	
+	<definition name="loginLayout" template="/WEB-INF/layout/mainlogin.jsp">
+		<put-attribute name="body" value="" />
+	</definition>
+	
+	<definition name="user" extends="studentLayout">
+		<put-attribute name="title" value="Học viên" />
+		<put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp" />
+		<put-attribute name="stylesheets" value="" />
+		<put-attribute name="body" value="/WEB-INF/layout/user.jsp" />
+	</definition>
+	
+	<definition name="detaisexam" extends="studentLayout">
+		<put-attribute name="title" value="Học viên" />
+		<put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp" />
+		<put-attribute name="stylesheets" value="" />
+		<put-attribute name="body" value="/WEB-INF/layout/detailsexercise.jsp" />
+	</definition>
+
+	<definition name="upload" extends="studentLayout">
+		<put-attribute name="title" value="Học viên" />
+		<put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp" />
+		<put-attribute name="stylesheets" value="" />
+		<put-attribute name="body" value="/WEB-INF/layout/uploadex.jsp" />
+	</definition>
+	
+	<definition name="formchange" extends="studentLayout">
+		<put-attribute name="title" value="Học viên" />
+		<put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp" />
+		<put-attribute name="stylesheets" value="" />
+		<put-attribute name="body" value="/WEB-INF/layout/changeform.jsp" />
+	</definition>
+
+	<definition name="home" extends="mainLayout">
+		<put-attribute name="title" value="Trang chủ" />
+		<put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp" />
+		<put-attribute name="stylesheets" value="" />
+		<put-attribute name="body" value="/WEB-INF/layout/home.jsp" />
+	</definition>
+	<definition name="login" extends="loginLayout">
+		<put-attribute name="title" value="Đăng nhập" />
+		<put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp" />
+		<put-attribute name="stylesheets" value="" />
+		<put-attribute name="body" value="/WEB-INF/layout/login.jsp" />
+	</definition>
+	
+	<!-- page LongLVQ -->
+	<definition name="javafs" extends="mainLayout">
+		<put-attribute name="title" value="javafullstack" />
+		<put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp" />
+		<put-attribute name="stylesheets" value="" />
+		<put-attribute name="body" value="/WEB-INF/layout/javafullstack-detail.jsp" />
+	</definition>
+	<definition name="pre-bridge" extends="mainLayout">
+		<put-attribute name="title" value="pre-bridge" />
+		<put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp" />
+		<put-attribute name="stylesheets" value="" />
+		<put-attribute name="body" value="/WEB-INF/layout/pre-bridge-enginneer.jsp" />
+	</definition>
+	<definition name="create-user-student" extends="mainLayout">
+		<put-attribute name="title" value="Admin" />
+		<put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp" />
+		<put-attribute name="stylesheets" value="/WEB-INF/admin/style-admin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/admin/create-user-student.jsp" />
+	</definition>
+	<!-- page LongLVQ -->
+	
+	<definition name="program-net" extends="mainLayout">
+	    <put-attribute name="title" value="Program Net"/>
+	    <put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp"/>
+	    <put-attribute name="stylesheets" value="" />
+		<put-attribute name="body" value="/WEB-INF/layout/program-with-net.jsp" />
+	</definition>
+	<definition name="frontend-stack" extends="mainLayout">
+	    <put-attribute name="title" value="Frontend Stack"/>
+	    <put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp"/>
+	    <put-attribute name="stylesheets" value="" />
+		<put-attribute name="body" value="/WEB-INF/layout/frontend-stack.jsp" />
+	</definition>
+	<definition name="contact" extends="mainLayout">
+	    <put-attribute name="title" value="Contact"/>
+	    <put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp"/>
+	    <put-attribute name="stylesheets" value="" />
+		<put-attribute name="body" value="/WEB-INF/layout/contact.jsp" />
+	</definition>
+	
+	<!-- Registration guest -->
+	<definition name="registration" extends="mainLayout">
+	    <put-attribute name="title" value="Registration"/>
+	    <put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp"/>
+	    <put-attribute name="stylesheets" value="" />
+		<put-attribute name="body" value="/WEB-INF/layout/registration.jsp" />
+	</definition>
+	
+	<!-- Thống kê guest -->
+<!-- 	<definition name="statistical" extends="mainLayout"> -->
+<!-- 	    <put-attribute name="title" value="Statistical"/> -->
+<!-- 	    <put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp"/> -->
+<!-- 	    <put-attribute name="stylesheets" value="" /> -->
+<!-- 		<put-attribute name="body" value="/WEB-INF/layout/statistical.jsp" /> -->
+<!-- 	</definition> -->
+	
+	<definition name="partner" extends="mainLayout">
+		<put-attribute name="title" value="Partner" />
+		<put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp" />
+		<put-attribute name="stylesheets" value="" />
+		<put-attribute name="body" value="/WEB-INF/layout/partner.jsp" />
+	</definition>
+	
+	<definition name="programs" extends="mainLayout">
+		<put-attribute name="title" value="Program" />
+		<put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp" />
+		<put-attribute name="stylesheets" value="" />
+		<put-attribute name="body" value="/WEB-INF/layout/programs.jsp" />
+	</definition>
+	<!--  
+	<definition name="user" extends="mainLayout">
+		<put-attribute name="title" value="User" />
+		<put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp" />
+		<put-attribute name="stylesheets" value="" />
+		<put-attribute name="body" value="/WEB-INF/layout/user.jsp" />
+	</definition>-->
+	
+	<definition name="admin" extends="adminLayout">
+		<put-attribute name="title" value="Admin" />
+		<put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp" />
+		<put-attribute name="stylesheets" value="" />
+		<put-attribute name="body" value="/WEB-INF/layout/admin.jsp" />
+	</definition>
+	
+	<definition name="create-user" extends="adminLayout">
+		<put-attribute name="title" value="Admin" />
+		<put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp" />
+		<put-attribute name="stylesheets" value="" />
+		<put-attribute name="body" value="/WEB-INF/layout/create-user.jsp" />
+	</definition>
+	
+	<definition name="lockup" extends="adminLayout">
+		<put-attribute name="title" value="Lockup" />
+		<put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp" />
+		<put-attribute name="stylesheets" value="" />
+		<put-attribute name="body" value="/WEB-INF/layout/lockup.jsp" />
+	</definition>
+	
+	<definition name="teacher" extends="mainLayout">
+		<put-attribute name="title" value="Giáo viên" />
+		<put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp" />
+		<put-attribute name="stylesheets" value="" />
+		<put-attribute name="body" value="/WEB-INF/layout/teacher.jsp" />
+	</definition>
+	
+	<definition name="display" extends="teacherLayout">
+		<put-attribute name="title" value="Giáo viên" />
+		<put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp" />
+		<put-attribute name="stylesheets" value="" />
+		<put-attribute name="body" value="/WEB-INF/layout/display.jsp" />
+	</definition>
+	
+	<definition name="add-exercise" extends="teacherLayout">
+		<put-attribute name="title" value="Giáo viên" />
+		<put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp" />
+		<put-attribute name="stylesheets" value="" />
+		<put-attribute name="body" value="/WEB-INF/layout/addExercise.jsp" />
+	</definition>
+	
+	<definition name="error-500" extends="mainLayout">
+		<put-attribute name="title" value="Error" />
+		<put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp" />
+		<put-attribute name="stylesheets" value="" />
+		<put-attribute name="body" value="/WEB-INF/layout/error-500.jsp" />
+	</definition>
+	
+	<definition name="view-course" extends="mainLayout">
+		<put-attribute name="title" value="View Course" />
+		<put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp" />
+		<put-attribute name="stylesheets" value="" />
+		<put-attribute name="body" value="/WEB-INF/layout/view-course.jsp" />
+	</definition>
+
+	<definition name="error-400" extends="mainLayout">
+		<put-attribute name="title" value="Error" />
+		<put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp" />
+		<put-attribute name="stylesheets" value="" />
+		<put-attribute name="body" value="/WEB-INF/layout/error-400.jsp" />
+	</definition>
+	
+	<definition name="images" extends="mainLayout">
+		<put-attribute name="title" value="Error" />
+		<put-attribute name="javascripts" value="/WEB-INF/common/cmn-js-css.jsp" />
+		<put-attribute name="stylesheets" value="" />
+		<put-attribute name="body" value="/WEB-INF/layout/images.jsp" />
+	</definition>
+	
+</tiles-definitions>

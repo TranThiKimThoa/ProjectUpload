@@ -1,0 +1,38 @@
+.h3t{
+	color: #fc8010;
+}
+.text-center{
+	text-align: center;
+	margin-top: 10px;
+}
+.text-left{
+	margin-left: 10px;
+}
+.pt{
+	font-weight: bold;
+	margin-left: 20px;
+	color: #fc8010;
+}
+.tth{
+	width: 10%;
+}
+.center-tr{
+	text-align: center;
+}
+table{
+	border: 1px solid #fc8010 !important;
+}
+.content-top{
+	margin-top: 5%;
+}
+.tittle-detail-eg{
+	font-family: Roboto, sans-serif;
+    color: #1c5494;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.t-table.t-table--border-success,
+.t-table.t-table--border-success th, .t-table.t-table--border-success td {
+  border-color: #fc8010; 
+  }
